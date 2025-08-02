@@ -45,11 +45,10 @@ Developed a machine learning model using a **Random Forest Classifier** trained 
 
 ## 🧩 Architecture
 
-Sensor Data (scaled) --> ML Model (RandomForest) --> Output: Sprinkler Status (0 or 1 for 20 zones)
-                                 |
-                            Streamlit App
-                                 |
-                      User Interface (Sliders + Output Display)
+1. User Inputs 20 scaled sensor values (between 0 and 1) using sliders in the Streamlit UI
+2. Streamlit Backend collects input and converts it into a NumPy array
+3. Machine Learning Model (Random Forest) predicts ON/OFF states for each of the 20 sprinklers
+4. Results Displayed dynamically in the web interface showing which parcels need irrigation
 
 ---
 
