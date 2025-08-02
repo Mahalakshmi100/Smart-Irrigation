@@ -6,30 +6,30 @@ An AI-powered **Smart Sprinkler Controller** that predicts the ON/OFF status of 
 ---
 
 ## 📌 Table of Contents
-- [Problem Statement](#problem-statement)
-- [Objectives](#objectives)
-- [Proposed Solution](#proposed-solution)
-- [Architecture](#architecture)
-- [Tech Stack Used](#tech-stack-used)
-- [Installation Steps](#installation-steps)
-- [How to Run](#how-to-run)
-- [Model Overview](#model-overview)
-- [Features](#features)
-- [Sample Use-Case](#sample-use-case)
-- [Output Screenshot](#output-screenshot)
-- [Future Scope](#future-scope)
-- [Acknowledgements](#acknowledgements)
-- [File Structure](#file-structure)
+- [📖 Problem Statement](#problem-statement)
+- [🎯 Objectives](#objectives)
+- [💡 Proposed Solution](#proposed-solution)
+- [🧩 Architecture](#architecture)
+- [🛠 Tech Stack Used](#tech-stack-used)
+- [⚙️ Installation Steps](#installation-steps)
+- [▶️ How to Run](#how-to-run)
+- [🧠 Model Overview](#model-overview)
+- [✨ Features](#features)
+- [💼 Sample Use-Case](#sample-use-case)
+- [📸 Output Screenshot](#output-screenshot)
+- [🚀 Future Scope](#future-scope)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📁 File Structure](#file-structure)
 
 ---
 
-## 📖 Problem Statement
+## Problem Statement
 
 Traditional irrigation systems often result in excessive water usage due to lack of automation and real-time data analysis. Inconsistent irrigation reduces crop yield and wastes valuable resources.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Automate sprinkler control using AI.
 - Utilize real-time sensor data to make intelligent irrigation decisions.
@@ -37,13 +37,13 @@ Traditional irrigation systems often result in excessive water usage due to lack
 
 ---
 
-## 💡 Proposed Solution
+## Proposed Solution
 
 Developed a machine learning model using a **Random Forest Classifier** trained on real-world sensor data. The model predicts ON/OFF states for **20 sprinkler zones** based on sensor readings. A **Streamlit app** provides a simple interface for users to interact with the system.
 
 ---
 
-## 🧩 Architecture
+## Architecture
 
 1. User Inputs 20 scaled sensor values (between 0 and 1) using sliders in the Streamlit UI
 2. Streamlit Backend collects input and converts it into a NumPy array
@@ -52,7 +52,7 @@ Developed a machine learning model using a **Random Forest Classifier** trained 
 
 ---
 
-## 🛠 Tech Stack Used
+## Tech Stack Used
 
 - **Python**
 - **Pandas**, **NumPy**, **Scikit-learn**
@@ -62,7 +62,7 @@ Developed a machine learning model using a **Random Forest Classifier** trained 
 
 ---
 
-## ⚙️ Installation Steps
+## Installation Steps
 
 1. Clone the repository:
 
@@ -83,7 +83,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 Run the Streamlit app:
 
@@ -96,7 +96,7 @@ Then open the local URL in your browser to interact with the Smart Irrigation in
 ---
 
 
-## 🧠 Model Overview
+## Model Overview
 
 - **Model Used**: `RandomForestClassifier` wrapped with `MultiOutputClassifier`
 - **Preprocessing**: Scaled input features using `MinMaxScaler`
@@ -105,7 +105,7 @@ Then open the local URL in your browser to interact with the Smart Irrigation in
 
 ---
 
-## ✨ Features
+## Features
 
 - Takes **20 scaled sensor inputs (0 to 1)** using sliders
 - Predicts **ON/OFF status of each sprinkler (parcel_0 to parcel_19)**
@@ -114,13 +114,13 @@ Then open the local URL in your browser to interact with the Smart Irrigation in
 
 ---
 
-## 💼 Sample Use-Case
+## Sample Use-Case
 
 A farmer can input current sensor values (like temperature, moisture, etc. scaled to 0–1) into the app. The model will predict which sprinkler zones should be turned ON to optimize water usage and crop health.
 
 ---
 
-## 📸 Output Screenshot
+## Output Screenshot
 
 - **Input Interface**
 
@@ -134,7 +134,7 @@ A farmer can input current sensor values (like temperature, moisture, etc. scale
 
 <img width="320" height="311" alt="image" src="https://github.com/user-attachments/assets/2ab32805-15d3-48be-997a-08c268d1bbc8" />
 
-## 🚀 Future Scope
+## Future Scope
 
 - Integrate real-time IoT sensor data
 - Deploy the model on embedded systems for offline use
@@ -143,7 +143,7 @@ A farmer can input current sensor values (like temperature, moisture, etc. scale
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - **Edunet Foundation**
 - **AICTE**
@@ -153,7 +153,7 @@ A farmer can input current sensor values (like temperature, moisture, etc. scale
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 smart-irrigation-system/
