@@ -88,7 +88,7 @@ pip install -r requirements.txt
 Run the Streamlit app:
 
 ```bash
-streamlit run app.py
+python -m streamlit run "app (1).py"
 ```
 
 Then open the local URL in your browser to interact with the Smart Irrigation interface.
