@@ -161,6 +161,8 @@ smart-irrigation-system/
 ├── app.py                         # Streamlit App
 ├── Farm_Irrigation_System.pkl     # Trained ML Model
 ├── irrigation_machine.csv         # Dataset (optional)
+├── week 1 task.ipynb              # Notebook with training & preprocessing
+├── week 2 task.ipynb              # Notebook with training & preprocessing
 ├── week 3 task.ipynb              # Notebook with training & preprocessing
 ├── requirements.txt               # Python dependencies
 └── README.md                      # Documentation
